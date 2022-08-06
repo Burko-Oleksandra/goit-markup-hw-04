@@ -15,8 +15,12 @@ ul {
   padding-inline-start: 0;
 }
 
-a {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 h1,
@@ -48,7 +52,7 @@ header {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -71,6 +75,10 @@ header {
   margin-left: 50px;
 }
 
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -80,28 +88,9 @@ header {
   display: flex;
 }
 
-.auth-nav .item + .item {
-  margin-left: 12px;
-}
-
-.icon-mail {
+.icon-nav {
   margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-
-.icon-mail:hover,
-.icon-mail:focus {
-  fill: var(--accent-color);
-}
-
-.icon-mobile {
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-
-.icon-mobile:hover,
-.icon-mobile:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .title {
@@ -157,7 +146,6 @@ header {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-right: 30px;
 }
 
 .auth-link:hover,
@@ -328,6 +316,13 @@ header {
   background-size: cover;
 }
 
+.benefits .container {
+  padding-bottom: 200px;
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+}
+
 .solutions {
   color: var(--background-color);
   font-weight: 900;
@@ -386,48 +381,6 @@ header {
   padding-bottom: 30px;
 }
 
-.network-button {
-  text-align: center;
-  margin: 0;
-}
-
-.social-network {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border: 0;
-  background-color: var(--background-color);
-  color: var(--icon-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  margin-left: 10px;
-  margin-top: 16px;
-}
-
-.social-network:hover,
-.social-network:focus {
-  color: var(--background-color);
-  background-color: var(--accent-color);
-}
-
-.icon-instagram {
-  fill: currentColor;
-}
-
-.icon-twitter {
-  fill: currentColor;
-}
-
-.icon-facebook {
-  fill: currentColor;
-}
-
-.icon-linkedin {
-  fill: currentColor;
-}
-
 .title.portfolio {
   font-weight: 700;
   font-size: 18px;
@@ -471,48 +424,29 @@ header {
   margin-right: 0;
 }
 
+.client {
+  display: flex;
+}
+
 .client-button {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+  max-width: 168px;
+  max-height: 90px;
   background-color: var(--background-color);
   color: var(--icon-color);
-  width: 170px;
-  height: 92px;
   border-radius: 4px;
+  border: 1px solid var(--icon-color);
+}
+
+.client .client-button + .client-button {
   margin-left: 30px;
-  border: 1px solid #afb1b8;
 }
 
-.icon-logo1 {
-  background-size: ;
-  fill: currentColor;
-}
-
-.icon-logo2 {
+.icon {
   background-size: cover;
   fill: currentColor;
-}
-
-.icon-logo3 {
-  background-size: cover;
-  fill: currentColor;
-}
-
-.icon-logo4 {
-  background-size: cover;
-  fill: currentColor;
-}
-
-.icon-logo5 {
-  background-size: cover;
-  fill: currentColor;
-}
-
-.icon-logo6 {
-  background-size: cover;
-  fill: currentColor;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 16px 32px;
 }
 
 .client-button:hover,
