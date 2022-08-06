@@ -425,6 +425,7 @@ header {
   height: 44px;
   color: var(--icon-color);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .network-button a {
@@ -547,4 +548,56 @@ address a:focus {
 
 .email {
   margin-bottom: 9px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.footer-network {
+  margin-left: 70px;
+}
+
+.network-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.network-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.network-item:hover,
+.network-item:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.network-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.network-list .network-item + .network-item {
+  margin-left: 10px;
 }
