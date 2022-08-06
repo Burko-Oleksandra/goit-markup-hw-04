@@ -406,6 +406,51 @@ header {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.social-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.network-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--icon-color);
+  border-radius: 50%;
+}
+
+.network-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-network .network-button + .network-button {
+  margin-left: 10px;
+}
+
+.network-button:hover,
+.network-button:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 16px 32px;
 }
 
 .team-list {
@@ -434,8 +479,8 @@ header {
 }
 
 .client-button {
-  max-width: 168px;
-  max-height: 90px;
+  width: 168px;
+  height: 90px;
   background-color: var(--background-color);
   color: var(--icon-color);
   border-radius: 4px;
