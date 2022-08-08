@@ -425,16 +425,15 @@ header {
   height: 44px;
   color: var(--icon-color);
   border-radius: 50%;
-  cursor: pointer;
 }
 
-.network-button a {
+/* .network-button a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.social-network .network-button + .network-button {
+.social-network li + li {
   margin-left: 10px;
 }
 
@@ -589,7 +588,7 @@ address a:focus {
 .network-item:hover,
 .network-item:focus {
   background-color: var(--accent-color);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .network-item a {
@@ -598,6 +597,6 @@ address a:focus {
   justify-content: center;
 }
 
-.network-list .network-item + .network-item {
+.network-list li + li {
   margin-left: 10px;
 }
