@@ -427,12 +427,6 @@ header {
   border-radius: 50%;
 }
 
-/* .network-button a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .social-network li + li {
   margin-left: 10px;
 }
@@ -588,7 +582,6 @@ address a:focus {
 .network-item:hover,
 .network-item:focus {
   background-color: var(--accent-color);
-  /* cursor: pointer; */
 }
 
 .network-item a {
