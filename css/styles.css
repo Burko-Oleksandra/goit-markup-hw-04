@@ -485,14 +485,6 @@ header {
   margin-left: 30px;
 }
 
-.icon {
-  background-size: cover;
-  fill: currentColor;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 16px 32px;
-}
-
 .client-button:hover,
 .client-button:focus {
   color: var(--accent-color);
