@@ -171,6 +171,7 @@ header {
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .benefits .container {
   padding-bottom: 200px;
   padding-top: 200px;
@@ -609,9 +610,6 @@ address a:focus {
 
 .title.portfolio {
   margin-bottom: 4px;
-}
-
-.title.portfolio {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
