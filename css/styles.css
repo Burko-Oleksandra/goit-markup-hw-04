@@ -364,6 +364,11 @@ header {
   margin-left: 10px;
 }
 
+.network-link:focus .network-button {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
 .network-button {
   display: flex;
   align-items: center;
@@ -374,8 +379,7 @@ header {
   border-radius: 50%;
 }
 
-.network-button:hover,
-.network-button:focus {
+.network-button:hover {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
@@ -396,6 +400,7 @@ header {
 }
 
 .client-button {
+  display: block;
   width: 168px;
   height: 90px;
   background-color: var(--background-color);
@@ -405,14 +410,19 @@ header {
   padding: 16px 32px;
 }
 
-.client .client-button + .client-button {
+.client li + li {
   margin-left: 30px;
 }
 
-.client-button:hover,
-.client-button:focus {
+.client-button:hover {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+
+.client-button:focus {
+  color: var(--accent-color);
+  border: none;
+  outline: 1px solid var(--accent-color);
 }
 
 /* Footer */
@@ -497,8 +507,7 @@ address a:focus {
   border-radius: 50%;
 }
 
-.network-item:hover,
-.network-item:focus {
+.network-item:hover {
   background-color: var(--accent-color);
 }
 
@@ -510,6 +519,14 @@ address a:focus {
 
 .network-list li + li {
   margin-left: 10px;
+}
+
+.network-link {
+  border-radius: 50%;
+}
+
+.network-link:focus .network-item {
+  background-color: var(--accent-color);
 }
 
 /* Портфоліо */
